@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<h1>Persona</h1>
+<hr/>
+
+<form th:action="@{/formulario/grabar}" th:object="${usuario}" 
+        action="#" method="post">
+
+    <p>Nombre:    <input type="text" th:field="*{nombre}" /></p>
+    <p>Email:     <input type="text" th:field="*{email}" /></p>
+    <p>Dirección: <input type="text" th:field="*{direccion}" /></p>
+    <hr/>
+    
+    <p>
+        <input type="submit" value="Submit" /> 
+        <input type="reset" value="Reset" />
+    </p>
+
+</form>
