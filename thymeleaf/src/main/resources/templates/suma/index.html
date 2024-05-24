@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<h1>Sumar</h1>
+<hr/>
+
+<form action="/suma" method="get">
+    
+    A:
+    <input type="text" name="a" />
+    <br/>
+    
+    B:
+    <input type="text" name="b" />
+    <br/>
+
+    <input type="submit" value="Sumar" />
+</form>
+
+<hr/>
+Resultado : <span th:text="${resultado}"/>

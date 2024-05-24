@@ -15,7 +15,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class SaludoController {
 
     @GetMapping("/saludo")
-    public String Saludo(Model model, @RequestParam(defaultValue="Mundo") String nombre) {
+    public String Saludo(
+        Model model, 
+        @RequestParam(defaultValue="Mundo") String nombre) 
+    {
 
         // invoca servicios de lógica de negocio
         // N/A
